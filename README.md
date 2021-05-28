@@ -54,7 +54,8 @@ if(!isLimitExceed){
 
 ```
 ```java
- final List<String> lastVisitedIps = rateLimitService.getAllIpAddr(int seconds);
+int seconds = 30;
+ final List<String> lastVisitedIps = rateLimitService.getAllIpAddr(seconds);
  Syste.out.println(lastVisitedIps);
 
 ```
