@@ -12,8 +12,8 @@ for a particular user, IP address.
 For any valid list of IPv4 addresses, write a method that returns a list of matches to a partial address; or False if no matches are found. 
 Some examples:
 
- – 192.168 will return any address that has 192.168 as two octets in the address
- – 254 will return any address that has 254 in any octet
+ * 192.168 will return any address that has 192.168 as two octets in the address
+ * 254 will return any address that has 254 in any octet
 
 The following rate limit configuration allows 1 method calls per SECOND for each unique `HttpServletRequest#getRemoteAddr()`.
 
@@ -40,9 +40,9 @@ final List<String> matchedList = InetValidationUtils.anyMatch(VALID_INET_4_ADDRE
 
 #### Defaults (Remote IP) - Part - B Assessment
 Build a set of API methods for counting IP addresses. Each IP address should be counted, and the number of times any given IP address has visited should also be stored. (store the results in memory, this solution does not require a database). The following scenarios should be accounted in the solution
-–	By default, any single IP address can have up to 100 hits in 1 minute. I
-–	At any moment, a single API call should return all IP addresses that have visited in the last X seconds;
-–	example: .get_all_ips(30) -> return a list of all IP addresses that visited at least once in the last 30 seconds
+*	By default, any single IP address can have up to 100 hits in 1 minute. I
+*	At any moment, a single API call should return all IP addresses that have visited in the last X seconds;
+*	example: .get_all_ips(30) -> return a list of all IP addresses that visited at least once in the last 30 seconds
 
 The following rate limit configuration allows 1 method calls per SECOND for each unique `HttpServletRequest#getRemoteAddr()`.
 
