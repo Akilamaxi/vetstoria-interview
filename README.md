@@ -23,3 +23,8 @@ if(!isLimitExceed){
 ```java
 mvn clean package 
 ```
+
+### How to test
+![Throttling with http header. Exception-handling.](./snapshots/1.png)
+![Throttling with http header. Exception-handling.](./snapshots/2.png)
+![Throttling with http header. Exception-handling.](./snapshots/3.png)

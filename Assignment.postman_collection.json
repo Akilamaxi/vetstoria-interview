@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "81dcd274-e1b4-42ad-abfd-05bd820c70d3",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ip-trace",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Forwarded-For",
+						"value": "192.168.1.2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ip-trace?seconds=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ip-trace"
+					],
+					"query": [
+						{
+							"key": "seconds",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
